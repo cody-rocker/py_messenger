@@ -8,7 +8,8 @@ from time import strftime
 USERNAME = ''
 PASSWORD = ''
 
-# Routing -- (FROMADDR can be null iirc)
+# Routing -- FROMADDR can be null iirc. 
+#            TOADDR is the recipient 10digit number plus carrier exchange found in carriers.txt
 FROMADDR = ''
 TOADDRS = ''
 
