@@ -28,7 +28,7 @@ Example usage:
 - MMS
 .. code-block:: python
   
-  import py_sms
+  import py_mms
   
   # same as above
   py_mms.USERNAME = 'your.acct@gmail.com'
