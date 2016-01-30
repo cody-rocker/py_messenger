@@ -32,3 +32,7 @@ def SendAttached(image_file, message, toaddr):
     server.login(USERNAME, PASSWORD)
     server.sendmail(FROMADDR, toaddr, msg.as_string())
     server.quit()
+
+
+def time_stamp():
+    return strftime('%-I:%M %p - %b %d %Y')
