@@ -36,7 +36,7 @@ Example usage:
   py_mms.USERNAME = 'your.acct@gmail.com'
   py_mms.PASSWORD = 'yourpassword'
   
-  # sometimes this is a different exchange from sms(`if it's supported`)
+  # sometimes this is a different exchange from sms(if it's supported)
   toaddr = '0123456789@mms.att.net'
   msg = 'message body'
   img_file = 'path/to/img.png'
@@ -45,6 +45,7 @@ Example usage:
     py_mms.send_attached_image(img_file, msg, toaddr)
   except Exception as e:
     print(e)
-    
+
 ------------
+
 Questions, comments, ideas are welcome and can be sent to the `developer <mailto:cody.rocker.83@gmail.com>`_
