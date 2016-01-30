@@ -1,6 +1,6 @@
 py_sms
 ======
-These scripts use exchange domains maintained by cellular carriers to exhange smtp(email) traffic onto the sms and mms networks. Look at ```carriers.txt``` to find the appropriate destination for your needs.
+These scripts use exchange domains maintained by cellular carriers to exhange smtp(email) traffic onto the sms and mms networks. Look at `carriers.txt <https://github.com/CodyTXR0KR/py_sms/blob/master/carriers.txt>`_ to find the appropriate destination for your needs.
 
 :Developer:
   Cody Rocker
@@ -43,3 +43,5 @@ Example usage:
     py_mms.send_attached_image(img_file, msg, toaddr)
   except Exception as e:
     print(e)
+
+Questions, comments, ideas are welcome and can be sent to the `developer <mailto:cody.rocker.83@gmail.com>`_
