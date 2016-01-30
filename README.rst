@@ -10,7 +10,7 @@ py_messenger
 Example usage:
 --------------
 
->> SMS
+**>> SMS**
 .. code-block:: python
   
   import py_sms
@@ -27,7 +27,7 @@ Example usage:
   except Exception as e:
     print(e)
   
->> MMS
+**>> MMS**
 .. code-block:: python
   
   import py_mms
