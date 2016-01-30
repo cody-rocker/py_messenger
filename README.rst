@@ -3,7 +3,7 @@ py_sms
 These scripts use exchange domains maintained by cellular carriers to exhange smtp(email) traffic onto the sms and mms networks. Look at `carriers.txt <https://github.com/CodyTXR0KR/py_sms/blob/master/carriers.txt>`_ to find the appropriate destination for your needs.
 
 :Developer:
-  Cody Rocker
+  `Cody Rocker <mailto:cody.rocker.83@gmail.com>`_
 :Date:
   2015
 
@@ -48,4 +48,4 @@ Example usage:
 
 ------------
 
-Questions, comments, ideas are welcome and can be sent to the `developer <mailto:cody.rocker.83@gmail.com>`_
+Questions, comments, ideas are welcome.
