@@ -11,9 +11,6 @@ PASSWORD = ''
 #            TOADDR is the recipient 10digit number plus carrier exchange found in carriers.txt
 FROMADDR = ''
 
-# Message Body
-MESSAGE = ''
-
 
 def send_message(message, toaddrs):
     server = smtplib.SMTP('smtp.gmail.com:587')
