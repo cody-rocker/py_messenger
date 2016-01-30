@@ -11,6 +11,7 @@ Example usage:
 --------------
 
 **>> SMS**
+
 .. code-block:: python
   
   import py_sms
@@ -28,6 +29,7 @@ Example usage:
     print(e)
   
 **>> MMS**
+
 .. code-block:: python
   
   import py_mms
