@@ -11,19 +11,18 @@ USERNAME = ''
 PASSWORD = ''
 
 FROMADDR = ''
-MESSAGE = ''
 
 # I've had mixed results with successful delivery on some carriers.
 # Supports most common image formats
 
 
-def SendAttached(IMAGE, MESSAGE, TOADDRS):
-    img_data = open(IMAGE, 'rb').read()
+def SendAttached(image_file, message, toaddr):
+    img_data = open(image_file, 'rb').read()
     msg = MIMEMultipart()
 
-    text = MIMEText(MESSAGE)
+    text = MIMEText(message)
     msg.attach(text)
-    image = MIMEImage(img_data, name=os.path.basename(IMAGE))
+    image = MIMEImage(img_data, name=os.path.basename(image_file))
     msg.attach(image)
 
     server = smtplib.SMTP('smtp.gmail.com:587')
@@ -31,6 +30,5 @@ def SendAttached(IMAGE, MESSAGE, TOADDRS):
     server.starttls()
     server.ehlo()
     server.login(USERNAME, PASSWORD)
-    server.sendmail(FROMADDR, TOADDRS, msg.as_string())
-    print('...success!')
+    server.sendmail(FROMADDR, toaddr, msg.as_string())
     server.quit()
