@@ -16,7 +16,7 @@ FROMADDR = ''
 # Supports most common image formats
 
 
-def SendAttached(image_file, message, toaddr):
+def send_attached_image(image_file, message, toaddr):
     img_data = open(image_file, 'rb').read()
     msg = MIMEMultipart()
 
