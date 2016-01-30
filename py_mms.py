@@ -10,13 +10,11 @@ from email.mime.multipart import MIMEMultipart
 USERNAME = ''
 PASSWORD = ''
 
-FROMADDR = ''
-
 # I've had mixed results with successful delivery on some carriers.
 # Supports most common image formats
 
 
-def send_attached_image(image_file, message, toaddr):
+def send_attached_image(image_file, message, toaddr, fromaddr=''):
     img_data = open(image_file, 'rb').read()
     msg = MIMEMultipart()
 
@@ -30,7 +28,7 @@ def send_attached_image(image_file, message, toaddr):
     server.starttls()
     server.ehlo()
     server.login(USERNAME, PASSWORD)
-    server.sendmail(FROMADDR, toaddr, msg.as_string())
+    server.sendmail(fromaddr, toaddr, msg.as_string())
     server.quit()
 
 
