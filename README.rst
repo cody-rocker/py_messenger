@@ -27,6 +27,8 @@ Example usage:
     py_sms.send_message(msg, toaddr)
   except Exception as e:
     print(e)
+
+``note: ideally you'd set/store the user password in a secure keyring and fetch it programatically, this example just shows basic usage.``
   
 **>> MMS**
 
