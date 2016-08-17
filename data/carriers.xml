@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Carriers>
+    <!-- These are the email/smtp exchange servers to trasmit to mobile SMS/MMS -->
+    <!-- networks. Not all entries have been tested so this list is to be       -->
+    <!-- maintained by the end user. This is the provided base/default.         -->
+
+    <!-- Not all carriers provide an explicit mms exchange, in these cases it   -->
+    <!-- is assumed that the sms/mms exchanges are the same. Results may vary.  -->
+
+    <!-- Leave this entry as is for unit testing -->
+    <Carrier name="Test">
+        <SmsExchange>txt.test.com</SmsExchange>
+        <MmsExchange>mms.test.com</MmsExchange>
+    </Carrier>
+
+    <Carrier name="ATT">
+        <SmsExchange>txt.att.net</SmsExchange>
+        <MmsExchange>mms.att.net</MmsExchange>
+    </Carrier>
+
+    <Carrier name="Cingular">
+        <SmsExchange>cingularme.com</SmsExchange>
+        <MmsExchange>cingularme.com</MmsExchange>
+    </Carrier>
+
+    <Carrier name="BoostMobile">
+        <SmsExchange>myboostmobile.com</SmsExchange>
+        <MmsExchange>myboostmobile.com</MmsExchange>
+    </Carrier>
+
+    <Carrier name="Nextel">
+        <SmsExchange>messaging.nextel</SmsExchange>
+        <MmsExchange>messaging.nextel</MmsExchange>
+    </Carrier>
+
+    <Carrier name="Sprint">
+        <SmsExchange>messaging.sprintpcs.com</SmsExchange>
+        <MmsExchange>pm.sprint.com</MmsExchange>
+    </Carrier>
+
+    <Carrier name="TMobile">
+        <SmsExchange>tmomail.net</SmsExchange>
+        <MmsExchange>tmomail.net</MmsExchange>
+    </Carrier>
+
+    <Carrier name="USCellular">
+        <SmsExchange>email.uscc.net</SmsExchange>
+        <MmsExchange>mms.uscc.net</MmsExchange>
+    </Carrier>
+
+    <Carrier name="Verizon">
+        <SmsExchange>vtext.com</SmsExchange>
+        <MmsExchange>vzwpix.com</MmsExchange>
+    </Carrier>
+
+    <Carrier name="VirginMobile">
+        <SmsExchange>vmobl.com</SmsExchange>
+        <MmsExchange>vmobl.com</MmsExchange>
+    </Carrier>
+
+</Carriers>
