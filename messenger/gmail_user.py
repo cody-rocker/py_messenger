@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
-### twitch_player
+### py_messenger
 ### GNU/GPL v2
 ### Author: Cody Rocker
 ### Author_email: cody.rocker.83@gmail.com
 ### 2016
-### command line tool for interacting with twitch.tv
-### via livestreamer, vlc and a 3rd party chat client.
+#-----------------------------------
+#   Requires:                    """
+#    - Python 3                  """
+#-----------------------------------
 import keyring
 import getpass
 

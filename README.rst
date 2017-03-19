@@ -30,7 +30,7 @@ Example CLI usage:
 
 .. code-block:: bash
 
-  py_messenger send -t SMS -d 1234567890 -m "message body"
+  py_messenger send -t SMS -d 1234567890 -c "carrier_net" -m "message body"
 
 **>> MMS**
 
