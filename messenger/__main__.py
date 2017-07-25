@@ -44,7 +44,7 @@ def main():
                 log.error(MISSING_ARGUMENT_ERR.format(arg='CARRIER'))
                 sys.exit(1)
 
-            msg = SMS_Message(args.message)
+            msg = SMS_Message(' '.join(args.message))
             try:
                 msg.send_to(args.dest_addr, args.carrier)
             except Exception as e:

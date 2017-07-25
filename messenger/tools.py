@@ -32,7 +32,7 @@ def parse_args():
     parser.add_argument('-d', '--dest-addr', dest='dest_addr', action='store',
         help = 'DEST_ADDR;\nEmail or 10-digit phone number\n')
 
-    parser.add_argument('-m', '--message', dest='message', action='store',
+    parser.add_argument('-m', '--message', dest='message', nargs='+', action='store',
         help = 'MESSAGE;\nBody of the message (STR)\n')
 
     parser.add_argument('-c', '--carrier', dest='carrier', action='store',
